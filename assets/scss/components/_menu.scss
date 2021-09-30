@@ -1,0 +1,51 @@
+.nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1rem 0;
+    
+&__list{
+        list-style: none;
+        margin-bottom: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        margin: 0.5rem;
+    }
+
+    &__link {
+        color:$black;
+        font-size: 1.25rem;
+    }
+
+    &__logo {
+        width: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 2rem;
+    }
+    
+    .nav__logo {
+        width: 40%;
+    }
+
+    .nav__item--hides {
+        display: none
+    }
+
+    .nav__item--stays a i {
+        font-size: 1.5rem;
+    }
+}
+
+// @media (max-width: 768px) {
+//     .profile {
+//         justify-content: center;
+//         border-bottom: none;
+//     }
